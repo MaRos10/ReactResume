@@ -1,8 +1,6 @@
-import React from "react";
 /* import Bubble from "../components/Bubble/Bubble"; */
 import "./Home.css";
 import Techstack from "../../components/Techstack/Techstack";
-
 import PageTransition from "../../components/PageTransition";
 
 export default function Home({ title }) {

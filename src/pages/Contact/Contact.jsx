@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Contact.css";
-
 import PageTransition from "../../components/PageTransition";
 
 const Contact = ({ title }) => {
+  // State for form data and submission status
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,6 +13,7 @@ const Contact = ({ title }) => {
   const [submitted, setSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
 
+  //Update form data on input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,17 +22,18 @@ const Contact = ({ title }) => {
     });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
     const submittedName = formData.name;
-    // Återställ formuläret efter att det har skickats
+    // Reset form after submission
     setFormData({
       name: "",
       email: "",
       message: "",
     });
-    // Visa en alert när formuläret har skickats
+    // Show an alert after submission
     setSubmittedName(submittedName);
     setSubmitted(true);
     setTimeout(() => {

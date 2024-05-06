@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
+//Fetches repository data from GitHub API and displays it
 export function FetchData() {
   const URL = "https://api.github.com/users/MaRos10/repos";
 

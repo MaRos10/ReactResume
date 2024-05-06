@@ -85,7 +85,6 @@ a {
 /* ---------- Mobile ---------- */
 @media only screen and (max-width: 768px) {
   .content {
-    /* width: 100vw; */
     min-height: auto;
   }
 
@@ -96,9 +95,3 @@ a {
     justify-content: center;
   }
 }
-
-/* @media only screen and (min-width: 1024px) {
-  .content {
-    height: 100%;
-  }
-} */

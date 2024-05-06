@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +16,7 @@ const App = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.theme);
 
+  // Function to toggle between light- and darkmode
   const toggleTheme = () => {
     dispatch({ type: "TOGGLE_THEME" });
   };
@@ -34,6 +34,7 @@ const App = () => {
         {theme === "light" ? "Dark Theme" : "Light Theme"}
       </button>
 
+      {/* Page transitions enabled with AnimatePresence */}
       <AnimatePresence initial={false}>
         <Routes>
           <Route path="/" element={<Home title="Välkommen 👋🏼" />} />

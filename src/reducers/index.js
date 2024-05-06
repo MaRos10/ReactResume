@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
+// Initial theme state
 const initialThemeState = {
-  // Initial state
   theme: "dark",
 };
 
@@ -19,9 +19,10 @@ const themeReducer = (state = initialThemeState, action) => {
   }
 };
 
+// Combine reducers
 const rootReducer = combineReducers({
   theme: themeReducer,
-  // Här kan jag lägga till reducers
+  // (additional reducers can be added here)
 });
 
 export default rootReducer;

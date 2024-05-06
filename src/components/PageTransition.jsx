@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// Defines page transition animation using Framer Motion
 export default function PageTransition({ children }) {
   const opacityAnimation = {
     initial: {

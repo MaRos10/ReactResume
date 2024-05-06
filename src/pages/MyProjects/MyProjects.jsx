@@ -1,4 +1,3 @@
-import React from "react";
 import { FetchData } from "../../components/FetchData";
 import "./MyProjects.css";
 import PageTransition from "../../components/PageTransition";
