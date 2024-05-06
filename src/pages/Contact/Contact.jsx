@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
+import { motion } from "framer-motion";
+
 const Contact = ({ title }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -39,7 +41,18 @@ const Contact = ({ title }) => {
   };
 
   return (
-    <section>
+    <motion.section
+      className="page"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       <form className="contactForm" onSubmit={handleSubmit}>
         <h1>{title}</h1>
         <div className="formGroup">
@@ -116,7 +129,7 @@ const Contact = ({ title }) => {
           </a>
         </h4>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

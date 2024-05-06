@@ -3,9 +3,22 @@ import React from "react";
 import "./Home.css";
 import Techstack from "../../components/Techstack/Techstack";
 
+import { motion } from "framer-motion";
+
 export default function Home({ title }) {
   return (
-    <>
+    <motion.div
+      className="page"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       <h1>{title}</h1>
       <section className="homeTextWrapper">
         <p className="homeText">
@@ -23,6 +36,6 @@ export default function Home({ title }) {
       {/*       <div className="bubbleContainer">
         <Bubble />
       </div> */}
-    </>
+    </motion.div>
   );
 }

@@ -1,10 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Home from "./pages/Home/Home";
 import MyProjects from "./pages/MyProjects/MyProjects";
 import Contact from "./pages/Contact/Contact";
 import Nav from "./components/Nav/Nav";
+
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -13,6 +20,8 @@ const App = () => {
   const toggleTheme = () => {
     dispatch({ type: "TOGGLE_THEME" });
   };
+
+  const location = useLocation();
 
   return (
     <section
@@ -24,11 +33,13 @@ const App = () => {
         {theme === "light" ? "Dark Theme" : "Light Theme"}
       </button>
 
-      <Routes>
-        <Route path="/" element={<Home title="Välkommen 👋🏼" />} />
-        <Route path="/myprojects" element={<MyProjects title="Projekt" />} />
-        <Route path="/contact" element={<Contact title="Kontakta mig" />} />
-      </Routes>
+      <AnimatePresence initial={false}>
+        <Routes>
+          <Route path="/" element={<Home title="Välkommen 👋🏼" />} />
+          <Route path="/myprojects" element={<MyProjects title="Projekt" />} />
+          <Route path="/contact" element={<Contact title="Kontakta mig" />} />
+        </Routes>
+      </AnimatePresence>
 
       <Nav />
     </section>
