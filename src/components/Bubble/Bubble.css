@@ -1,0 +1,24 @@
+.bubble {
+  width: 20rem;
+  height: 20rem;
+  background-color: #00bcd4;
+  animation: changeShape 15s infinite;
+}
+
+@keyframes changeShape {
+  0% {
+    border-radius: 70% 0 50% 0;
+  }
+  25% {
+    border-radius: 0 50% 0 60%;
+  }
+  50% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  100% {
+    border-radius: 50% 0 50% 0;
+  }
+}

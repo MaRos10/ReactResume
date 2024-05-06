@@ -1,0 +1,24 @@
+.projectSubtitle {
+  padding: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(3, 225px);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project {
+  padding: 1rem;
+  border: 1px solid #ecd8d8;
+  border-radius: 40px;
+}
+
+.project:hover {
+  border-color: #2662a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
