@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
-import { motion } from "framer-motion";
+import PageTransition from "../../components/PageTransition";
 
 const Contact = ({ title }) => {
   const [formData, setFormData] = useState({
@@ -41,18 +41,7 @@ const Contact = ({ title }) => {
   };
 
   return (
-    <motion.section
-      className="page"
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-      }}
-    >
+    <PageTransition>
       <form className="contactForm" onSubmit={handleSubmit}>
         <h1>{title}</h1>
         <div className="formGroup">
@@ -96,7 +85,6 @@ const Contact = ({ title }) => {
           </div>
         )}
       </form>
-
       <div className="contactMe">
         <h4>
           <a href="mailto:marinarosenstiel@hotmail.com">
@@ -129,7 +117,7 @@ const Contact = ({ title }) => {
           </a>
         </h4>
       </div>
-    </motion.section>
+    </PageTransition>
   );
 };
 
