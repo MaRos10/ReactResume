@@ -1,18 +1,29 @@
 import { motion } from "framer-motion";
 
 export default function PageTransition({ children }) {
+  const opacityAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
+
   return (
     <motion.div
       className="page"
-      initial={{
-        opacity: 0,
+      transition={{
+        ease: "easeInOut",
+        duration: 0.8,
       }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-      }}
+      variants={opacityAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
     >
       {children}
     </motion.div>
