@@ -24,7 +24,7 @@ export function FetchData() {
         {data.map((repo) => (
           <article className="project" key={repo.id}>
             <a href={repo.html_url}>
-              <h3>{repo.name}</h3>
+              <p className="repoName">{repo.name}</p>
             </a>
           </article>
         ))}

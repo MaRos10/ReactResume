@@ -1,3 +1,5 @@
+@import "/src/sass/_variables.scss";
+
 .techstack {
   display: flex;
   flex-direction: column;
@@ -46,5 +48,5 @@
 }
 
 .techText {
-  font-family: "Poppins", sans-serif;
+  font-family: $title;
 }

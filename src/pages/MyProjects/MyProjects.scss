@@ -1,6 +1,8 @@
+@import "/src/sass/_variables.scss";
+
 .projectSubtitle {
   padding: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: $title;
   font-weight: 300;
   font-size: 1.4rem;
 }
@@ -21,4 +23,9 @@
 .project:hover {
   border-color: #2662a2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.repoName {
+  font-family: $text;
+  font-size: 1.1rem;
 }

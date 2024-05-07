@@ -1,5 +1,5 @@
 /* import Bubble from "../components/Bubble/Bubble"; */
-import "./Home.css";
+import "./Home.scss";
 import Techstack from "../../components/Techstack/Techstack";
 import PageTransition from "../../components/PageTransition";
 

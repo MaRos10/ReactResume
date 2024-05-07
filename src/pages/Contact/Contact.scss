@@ -1,10 +1,12 @@
+@import "/src/sass/_variables.scss";
+
 .contactForm {
   max-width: 400px;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  border-radius: 20px;
+  border-radius: $wrapperborder;
   background-color: transparent;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -17,7 +19,8 @@
 label {
   display: block;
   margin-bottom: 1rem;
-  font-family: "Karla", sans-serif;
+  font-family: $text;
+  font-size: 1.07rem;
 }
 
 input,
@@ -26,7 +29,7 @@ textarea {
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-family: "Karla", sans-serif;
+  font-family: $text;
 }
 
 .sendBtnWrapper {
@@ -37,10 +40,11 @@ textarea {
 .sendBtn {
   width: 40%;
   padding: 0.5rem;
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  background-color: #2662a2;
+  font-family: $text;
+  text-transform: uppercase;
+  font-size: 0.98rem;
+  letter-spacing: 0.1rem;
+  background-color: $btncolor;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -49,11 +53,12 @@ textarea {
 }
 
 .sendBtn:hover {
-  background-color: #1c496f;
+  background-color: $btnhover;
 }
 
 .successMessage {
   margin-top: 0.62rem;
+  font-family: $infotext;
 }
 
 .contactIcon {
@@ -62,7 +67,7 @@ textarea {
 }
 
 .logoTitle {
-  font-family: "Karla", sans-serif;
+  font-family: $text;
   font-size: 0.85rem;
   text-align: center;
 }
