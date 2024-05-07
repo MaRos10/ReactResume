@@ -45,6 +45,7 @@ textarea {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .sendBtn:hover {
@@ -56,6 +57,27 @@ textarea {
 }
 
 .contactIcon {
-  width: 2rem;
+  width: 1.8rem;
   margin-right: 1rem;
+}
+
+.logoTitle {
+  font-family: "Karla", sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Vertikalt */
+.contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  padding-top: 2rem;
+}
+
+.contactIcon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
 }

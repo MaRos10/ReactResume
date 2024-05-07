@@ -78,9 +78,11 @@ const Contact = ({ title }) => {
             required
           />
         </div>
-        <button className="sendBtn" type="submit">
-          Skicka
-        </button>
+        <div className="sendBtnWrapper">
+          <button className="sendBtn" type="submit">
+            Skicka
+          </button>
+        </div>
         {submitted && (
           <div className="successMessage">
             Tack {submittedName}! Ditt meddelande har skickats 📨
@@ -88,36 +90,36 @@ const Contact = ({ title }) => {
         )}
       </form>
       <div className="contactMe">
-        <h4>
+        <p className="logoTitle">
           <a href="mailto:marinarosenstiel@hotmail.com">
             <img
               className="contactIcon"
-              src="src/assets/email.png"
+              src="src/assets/logo-mail.svg"
               alt="My email"
             />
-            marinarosenstiel@hotmail.com
+            {/* Mail */}
           </a>
-        </h4>
-        <h4>
+        </p>
+        <p className="logoTitle">
           <a href="https://se.linkedin.com/in/marina-rosenstiel-875bb7152">
             <img
               className="contactIcon"
-              src="src/assets/linkedin.png"
+              src="src/assets/logo-linkedin.svg"
               alt="My linkedin"
             />
-            LinkedIn
+            {/* LinkedIn */}
           </a>
-        </h4>
-        <h4>
+        </p>
+        <p className="logoTitle">
           <a href="https://github.com/MaRos10">
             <img
               className="contactIcon"
-              src="src/assets/github.png"
+              src="src/assets/logo-github.svg"
               alt="My github"
             />
-            GitHub
+            {/* GitHub */}
           </a>
-        </h4>
+        </p>
       </div>
     </PageTransition>
   );

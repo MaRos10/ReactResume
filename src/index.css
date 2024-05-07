@@ -82,7 +82,7 @@ a {
   background-color: #1c496f;
 }
 
-/* ---------- Mobile ---------- */
+/* ---------- Mediaqueries ---------- */
 @media only screen and (max-width: 768px) {
   .content {
     min-height: auto;
