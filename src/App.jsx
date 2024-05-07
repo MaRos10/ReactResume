@@ -31,7 +31,7 @@ const App = () => {
       <Nav />
 
       <button className="themeBtn" onClick={toggleTheme}>
-        {theme === "light" ? "Dark Theme" : "Light Theme"}
+        {theme === "light" ? "Dark mode" : "Light Mode"}
       </button>
 
       {/* Page transitions enabled with AnimatePresence */}

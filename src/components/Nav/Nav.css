@@ -19,8 +19,8 @@ li {
 }
 
 .navLink:hover {
-  /* text-decoration: underline; */
   border-bottom: 2px solid rgb(80, 132, 195);
+  padding-bottom: 0.4rem;
 }
 
 .light-theme .navLink {
