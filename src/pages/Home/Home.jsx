@@ -1,4 +1,3 @@
-/* import Bubble from "../components/Bubble/Bubble"; */
 import "./Home.scss";
 import Techstack from "../../components/Techstack/Techstack";
 import PageTransition from "../../components/PageTransition";
@@ -17,12 +16,9 @@ export default function Home({ title }) {
           dessa kunskaper praktiskt i olika projekt.
         </p>
       </section>
-      <div>
+      <section>
         <Techstack />
-      </div>
-      {/*       <div className="bubbleContainer">
-        <Bubble />
-      </div> */}
+      </section>
     </PageTransition>
   );
 }

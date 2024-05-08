@@ -1,6 +1,6 @@
 .bubble {
-  width: 20rem;
-  height: 20rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #00bcd4;
   animation: changeShape 15s infinite;
 }

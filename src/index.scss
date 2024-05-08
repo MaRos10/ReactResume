@@ -33,23 +33,23 @@ h1 {
 }
 
 .dark-theme {
-  background: linear-gradient(
+  /*   background: linear-gradient(
     313deg,
     rgba(27, 201, 204, 1) 7%,
     rgb(4, 14, 148) 95%
-  );
+  ); */
 
   color: rgb(245, 229, 229);
 
   /* background: linear-gradient(340deg, #30cfd0 0%, #330867 100%); */
 
-  /* background: linear-gradient(
-    60deg,
+  background: linear-gradient(
+    140deg,
     #292270 0%,
     #2568a1 37%,
     #259abb 65%,
     #2bbc76 100%
-  ); */
+  );
 }
 
 a {
