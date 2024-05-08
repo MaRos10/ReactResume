@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import "./Techstack.scss";
 
 export default function Techstack() {
   return (
     <section className="techstack">
-      <h1 className="techstackHeader">Techstack</h1>
-
+      <motion.article
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1 }}
+      >
+        <h1 className="techstackHeader">Techstack</h1>
+      </motion.article>
       <section className="techstackTagWrapper">
         <article className="buttonTag">
           <article className="buttonInfo">

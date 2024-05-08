@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 //Fetches repository data from GitHub API and displays it
 export function FetchData() {
@@ -17,9 +18,14 @@ export function FetchData() {
 
   return (
     <section>
-      <h2 className="projectSubtitle">
-        Ta gärna en titt på mina GitHub - projekt
-      </h2>
+      <motion.h2
+        className="projectSubtitle"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1 }}
+      >
+        Ta gärna en titt på mina GitHub-projekt
+      </motion.h2>
       <article className="projectList">
         {data.map((repo) => (
           <article className="project" key={repo.id}>
