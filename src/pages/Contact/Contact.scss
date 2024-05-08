@@ -58,7 +58,11 @@ textarea {
 
 .successMessage {
   margin-top: 0.62rem;
+  padding: 0.3rem;
   font-family: $infotext;
+  border-radius: 15px;
+  background-color: rgb(239, 245, 240);
+  color: rgb(114, 104, 104);
 }
 
 .contactIcon {

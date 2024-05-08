@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Contact.scss";
 import PageTransition from "../../components/PageTransition";
+import { motion } from "framer-motion";
 
 const Contact = ({ title }) => {
   // State for form data and submission status
@@ -39,7 +40,7 @@ const Contact = ({ title }) => {
     setTimeout(() => {
       setSubmitted(false);
       setSubmittedName("");
-    }, 5000);
+    }, 9000);
   };
 
   return (
@@ -83,10 +84,17 @@ const Contact = ({ title }) => {
             Skicka
           </button>
         </div>
+        {/* Animation for successmessage */}
         {submitted && (
-          <div className="successMessage">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className="successMessage"
+          >
             Tack {submittedName}! Ditt meddelande har skickats 📨
-          </div>
+          </motion.div>
         )}
       </form>
       <div className="contactMe">
