@@ -14,7 +14,7 @@ const Contact = ({ title }) => {
   const [submitted, setSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
 
-  //Update form data on input change
+  // Update form data on input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -40,11 +40,12 @@ const Contact = ({ title }) => {
     setTimeout(() => {
       setSubmitted(false);
       setSubmittedName("");
-    }, 9000);
+    }, 5000);
   };
 
   return (
     <PageTransition>
+      {/* Contactform */}
       <form className="contactForm" onSubmit={handleSubmit}>
         <h1>{title}</h1>
         <div className="formGroup">
@@ -84,6 +85,7 @@ const Contact = ({ title }) => {
             Skicka
           </button>
         </div>
+
         {/* Animation for successmessage */}
         {submitted && (
           <motion.div
@@ -97,37 +99,40 @@ const Contact = ({ title }) => {
           </motion.div>
         )}
       </form>
+
+      {/* Contact socials */}
       <div className="contactMe">
-        <p className="logoTitle">
-          <a href="mailto:marinarosenstiel@hotmail.com">
-            <img
-              className="contactIcon"
-              src="src/assets/logo-mail.svg"
-              alt="My email"
-            />
-            {/* Mail */}
-          </a>
-        </p>
-        <p className="logoTitle">
-          <a href="https://se.linkedin.com/in/marina-rosenstiel-875bb7152">
-            <img
-              className="contactIcon"
-              src="src/assets/logo-linkedin.svg"
-              alt="My linkedin"
-            />
-            {/* LinkedIn */}
-          </a>
-        </p>
-        <p className="logoTitle">
-          <a href="https://github.com/MaRos10">
-            <img
-              className="contactIcon"
-              src="src/assets/logo-github.svg"
-              alt="My github"
-            />
-            {/* GitHub */}
-          </a>
-        </p>
+        <a href="mailto:marinarosenstiel@hotmail.com">
+          <img
+            className="contactIcon"
+            src="src/assets/logo-mail.svg"
+            alt="My email"
+          />
+        </a>
+
+        <a
+          href="https://se.linkedin.com/in/marina-rosenstiel-875bb7152"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="contactIcon"
+            src="src/assets/logo-linkedin.svg"
+            alt="My linkedin"
+          />
+        </a>
+
+        <a
+          href="https://github.com/MaRos10"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="contactIcon"
+            src="src/assets/logo-github.svg"
+            alt="My github"
+          />
+        </a>
       </div>
     </PageTransition>
   );
