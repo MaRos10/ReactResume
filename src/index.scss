@@ -24,6 +24,7 @@ h1 {
   padding: 3rem;
   font-family: $title;
   font-weight: 400;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------- Light- & Darkmode ---------- */
@@ -33,39 +34,48 @@ h1 {
 }
 
 .dark-theme {
-  /*   background: linear-gradient(
-    313deg,
-    rgba(27, 201, 204, 1) 7%,
-    rgb(4, 14, 148) 95%
-  ); */
-
   color: rgb(245, 229, 229);
+  background: linear-gradient(340deg, #30cfd0 0%, #330867 100%);
 
-  /* background: linear-gradient(340deg, #30cfd0 0%, #330867 100%); */
-
-  background: linear-gradient(
+  /*   background: linear-gradient(
     140deg,
     #292270 0%,
-    #2568a1 37%,
-    #259abb 65%,
+    #2568a1 45%,
+    #259abb 70%,
     #2bbc76 100%
-  );
+  ); */
+}
+
+.light-theme .navLink {
+  color: #2662a2;
+}
+
+.dark-theme .navLink {
+  color: rgb(193, 193, 214);
+}
+
+.light-theme .navLink:hover {
+  border-bottom: 2px solid rgb(80, 132, 195);
+}
+
+.dark-theme .navLink:hover {
+  border-bottom: 2px solid rgb(146, 146, 163);
 }
 
 a {
+  display: inline-block;
+  padding: 0.6rem;
   text-decoration: none;
   cursor: pointer;
   color: rgb(170, 170, 201);
-  display: inline-block;
-  padding: 0.6rem;
-}
-
-.dark-theme a {
-  color: white;
 }
 
 .light-theme a {
   color: rgb(45, 45, 160);
+}
+
+.dark-theme a {
+  color: rgb(234, 229, 229);
 }
 
 .themeBtn {
@@ -74,8 +84,9 @@ a {
   border: none;
   border-radius: 20px;
   background-color: $btncolor;
-  color: white;
+  color: rgb(234, 229, 229);
   font-family: "Karla", sans-serif;
+  box-shadow: $btnshadow;
 }
 
 .themeBtn:hover {

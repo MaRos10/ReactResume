@@ -22,7 +22,6 @@ const themeReducer = (state = initialThemeState, action) => {
 // Combine reducers
 const rootReducer = combineReducers({
   theme: themeReducer,
-  // (additional reducers can be added here)
 });
 
 export default rootReducer;

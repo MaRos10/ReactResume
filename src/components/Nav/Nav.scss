@@ -21,14 +21,5 @@ li {
 }
 
 .navLink:hover {
-  border-bottom: 2px solid rgb(80, 132, 195);
   padding-bottom: 0.4rem;
-}
-
-.light-theme .navLink {
-  color: #2662a2;
-}
-
-.dark-theme .navLink {
-  color: rgb(193, 193, 214);
 }

@@ -27,7 +27,7 @@ input,
 textarea {
   width: 85%;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   font-family: $text;
 }
@@ -40,6 +40,7 @@ textarea {
 .sendBtn {
   width: 40%;
   padding: 0.5rem;
+  margin-bottom: 1rem;
   font-family: $text;
   text-transform: uppercase;
   font-size: 0.98rem;
@@ -49,7 +50,7 @@ textarea {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  margin-bottom: 1rem;
+  box-shadow: $btnshadow;
 }
 
 .sendBtn:hover {

@@ -1,10 +1,11 @@
 @import "/src/sass/_variables.scss";
 
 .projectSubtitle {
-  padding: 2.5rem;
-  font-family: $title;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  font-family: $text;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .projectList {

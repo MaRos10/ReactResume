@@ -45,7 +45,7 @@ const Contact = ({ title }) => {
 
   return (
     <PageTransition>
-      {/* Contactform */}
+      {/* ---------- Contactform ---------- */}
       <form className="contactForm" onSubmit={handleSubmit}>
         <h1>{title}</h1>
         <div className="formGroup">
@@ -100,8 +100,8 @@ const Contact = ({ title }) => {
         )}
       </form>
 
-      {/* Contact socials */}
-      <div className="contactMe">
+      {/* ---------- Contact socials ---------- */}
+      <section className="contactMe">
         <a href="mailto:marinarosenstiel@hotmail.com">
           <img
             className="contactIcon"
@@ -133,7 +133,7 @@ const Contact = ({ title }) => {
             alt="My github"
           />
         </a>
-      </div>
+      </section>
     </PageTransition>
   );
 };

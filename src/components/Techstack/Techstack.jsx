@@ -4,6 +4,7 @@ import "./Techstack.scss";
 export default function Techstack() {
   return (
     <section className="techstack">
+      {/* ---------- Textanimation ---------- */}
       <motion.article
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -11,6 +12,7 @@ export default function Techstack() {
       >
         <h1 className="techstackHeader">Techstack</h1>
       </motion.article>
+
       <section className="techstackTagWrapper">
         <article className="buttonTag">
           <article className="buttonInfo">

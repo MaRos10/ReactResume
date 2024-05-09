@@ -1,5 +1,5 @@
-import { FetchData } from "../../components/FetchData";
 import "./MyProjects.scss";
+import { FetchData } from "../../components/FetchData";
 import PageTransition from "../../components/PageTransition";
 
 export default function MyProjects({ title }) {

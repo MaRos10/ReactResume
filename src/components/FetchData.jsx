@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-//Fetches repository data from GitHub API and displays it
+// Fetches repository data from GitHub API and displays it
 export function FetchData() {
   const URL = "https://api.github.com/users/MaRos10/repos";
 
@@ -18,6 +18,7 @@ export function FetchData() {
 
   return (
     <section>
+      {/* ---------- Textanimation ---------- */}
       <motion.h2
         className="projectSubtitle"
         initial={{ y: 50, opacity: 0 }}
