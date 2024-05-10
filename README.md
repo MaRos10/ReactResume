@@ -25,5 +25,5 @@ useLocation används tillsammans med AnimatePresence för att hantera sidöverg�
 1.	Klona detta repository
 2.	Öppna terminalen och navigera till projektmappen
 3.	Kör ’npm install’ för att installera alla projektets beroenden
-4.	Kör ’npm start’ för att starta utvecklingsservern
+4.	Kör ’npm run dev’ för att starta utvecklingsservern
 5.	Öppna din webbläsare och gå till adressen som anges i terminalen för att se hemsidan
