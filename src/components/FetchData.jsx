@@ -30,7 +30,7 @@ export function FetchData() {
       <article className="projectList">
         {data.map((repo) => (
           <article className="project" key={repo.id}>
-            <a href={repo.html_url}>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
               <p className="repoName">{repo.name}</p>
             </a>
           </article>
